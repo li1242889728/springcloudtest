@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="nativeconfigclient" />
         <module name="zuul" />
+        <module name="configclient" />
         <module name="nativeconfigserver" />
         <module name="resttemplate" />
         <module name="feign" />
@@ -25,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configclient" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
