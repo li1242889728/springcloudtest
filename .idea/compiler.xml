@@ -13,6 +13,7 @@
         <module name="resttemplate" />
         <module name="feign" />
         <module name="ribbon" />
+        <module name="configserver" />
         <module name="eurekaserver" />
         <module name="consumer" />
         <module name="eurekaclient" />
@@ -24,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
